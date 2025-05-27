@@ -1,4 +1,4 @@
-name: Fetch Weather
+name: Fetch Weather with Hard Coded api-key
 
 on:
   push:
