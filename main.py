@@ -11,7 +11,8 @@ def fetch_weather(city):
 
     if response.status_code == 200:
         data = response.json()
-        print(f"Current temperature in {city}: {data['current']['temp_c']}°C")
+        temperature = data["main"]["temp"]
+        print(f"Current temperature in {city}: {temperature}°C")
     else:
         print("Failed to fetch weather data.")
         print("Status Code:", response.status_code)
