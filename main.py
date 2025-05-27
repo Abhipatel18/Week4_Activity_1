@@ -6,7 +6,7 @@ def fetch_weather(city):
     if not api_key:
         raise ValueError("No API key found in environment variable MY_API_KEY")
 
-    url = f"http://api.weatherapi.com/v1/current.json?key={api_key}&q={city}"
+    url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
     response = requests.get(url)
 
     if response.status_code == 200:
