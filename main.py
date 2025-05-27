@@ -19,4 +19,4 @@ def fetch_weather(city):
         print("Response:", response.text)
 
 if __name__ == "__main__":
-    fetch_weather("Toronto")
+    fetch_weather("Edmonton")
