@@ -4,7 +4,7 @@ import requests
 def fetch_weather(city):
     api_key = os.getenv("MY_API_KEY")
     if not api_key:
-        raise ValueError("No API key found in environment variable WEATHER_API_KEY")
+        raise ValueError("No API key found in environment variable MY_API_KEY")
 
     url = f"http://api.weatherapi.com/v1/current.json?key={api_key}&q={city}"
     response = requests.get(url)
