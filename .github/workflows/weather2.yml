@@ -25,5 +25,5 @@ jobs:
 
       - name: Run script with secret
         env:
-          MY_API_KEY: bdf5a4056376bfd95284755824ba216a
+          MY_API_KEY: "bdf5a4056376bfd95284755824ba216a"
         run: python main.py
